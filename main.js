@@ -69,4 +69,47 @@ console.log("u"); }
   if(keyPressed == '67') { new_image('cloud.jpg');
 console.log("c"); }
 }
-funtion up()
+funtion up(){
+if (player_y>=0){
+  player_y=player_y-block_image_height;
+  console.log("bolck_image_height= " + block_image_height);
+console.log("whenuparrowispressed, X = " + player_x + " , Y = "+player_y");
+canvas.remove(player_object);
+  player_update();
+}
+}funtion up(){
+if (player_y>=0){
+  player_y=player_y-block_image_height;
+  console.log("block_image_height= " + block_image_height);
+console.log("whenuparrowispressed, X = " + player_x + " , Y = "+player_y");
+canvas.remove(player_object);
+  player_update();
+}
+}
+funtion down(){
+if (player_y<=500){
+  player_y=player_y+block_image_height;
+  console.log("block_image_height= " + block_image_height);
+console.log("whenuparrowispressed, X = " + player_x + " , Y = "+player_y");
+canvas.remove(player_object);
+  player_update();
+}
+}
+funtion left()(
+if (player_x>0){
+  player_x=player_x-block_image_height;
+  console.log("block_image_height= " + block_image_height);
+console.log("whenuparrowispressed, X = " + player_x + " , Y = "+player_y");
+canvas.remove(player_object);
+  player_update();
+}
+}
+funtion right(){
+if (player_x<=850){
+  player_x=player_x+block_image_height;
+  console.log("block_image_height= " + block_image_height);
+console.log("whenuparrowispressed, X = " + player_x + " , Y = "+player_y");
+canvas.remove(player_object);
+  player_update();
+}
+}
